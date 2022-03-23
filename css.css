@@ -6,7 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin: 0 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     color: #3d3d3d;
@@ -43,7 +43,7 @@ header .navQuartosTopo{
     justify-content: flex-end;
 }
 header nav a:hover{
-    color: aqua;
+    color:#4cd1a7;
     transition: all .5s;
 }
 header h1 span{
@@ -187,6 +187,15 @@ main .descricao{
     width: 200px;
     height: 150px;
 }
+.todosOsQuartos{
+    text-decoration: underline;
+    font-size: 20px;
+    font-weight: bold;
+}
+.todosOsQuartos:hover{
+    color: #4cd1a7;
+    transition: all .5s;
+}
 /*FIM CORPO*/
 
 /*RODAPE*/
@@ -224,12 +233,12 @@ footer .rodape div p{
 
     }
     
-    footer .rodape{width: 100%;
+    footer .rodape{
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;        
     }
 
 }
@@ -257,22 +266,31 @@ footer .rodape div p{
    
 }
 @media(max-width:720px){
+    .quartos figure img{
+        width: 250px;
+        height: 150px;
+
+    }
     header{
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         height: 100px;
     }
-    header nav{
+    header nav, header .navQuartosTopo{
+        display: none;
         width: 40%;
         margin-top: 20px;
     }
     .baner div{
-        width: 420px;
+        width: 95%;
+        background-size:contain;
     }
     
     .sobreDescricaoContainer .sobreDescricao p{
-        width: 200px;
+        width: 180px;
     }
+  
 }
