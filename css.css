@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: #3d3d3d;
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: #3d3d3d;
+
+}
+/*TOPO*/
+header{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: #fff;
+
+}
+header nav{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+header nav a{
+    font-size: 20px;
+    font-weight: bold;
+}
+header .navQuartosTopo{
+    display: flex;
+    justify-content: flex-end;
+}
+header nav a:hover{
+    color: aqua;
+    transition: all .5s;
+}
+header h1 span{
+    color: #4cd1a7;
+}
+.baner{
+    width: 100%;
+    background-image: url('img/img-fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.baner div{
+    background-color: rgba(76,209,167,0.7);
+    border:1px solid #fff;
+    border-radius: 5px;
+    width:920px;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.baner div h2{
+    font-size: 40px;
+}
+.baner div p{
+    font-size: 20px;
+}
+.baner div h2, .baner div p{
+    color: #fff;
+    margin: 1em;
+}
+.baner2{
+    background-image: url('img/img-fundo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+/*FIM TOPO*/
+/*CORPO*/
+figure{
+    margin-bottom: 20px;
+    background-color: #4cd1a7;
+    border-radius: 5px;
+}
+figure figcaption{
+    text-align: center;
+    color: #fff;
+    padding: 5px;
+}
+main, section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .descricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 50px;
+    text-transform: capitalize;
+}
+.quartos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.quartos figure img{
+    width: 400px;
+    border-radius: 5px;
+    height:300px;
+}
+
+
+.rota, .rota iframe{
+    width: 100%;
+    min-height: 400px;
+}
+#rota .descricao, #sobre .descricao{
+    margin-top: 100px;
+}
+.informacoesQuarto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px;
+}
+.informacoesQuarto ul{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    
+    margin-top: 10px;
+}
+.informacoesQuarto ul li{
+    padding: 10px;
+    font-size: 22pxpx;
+
+}
+
+.sobreDescricaoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.sobreDescricaoContainer .sobreDescricao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+.sobreDescricaoContainer .sobreDescricao .sobreDescricao2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    
+}
+.sobreDescricaoContainer .sobreDescricao p{
+    width: 300px;
+}
+.sobreDescricaoContainer .sobreDescricao img{
+    width: 200px;
+    height: 150px;
+}
+/*FIM CORPO*/
+
+/*RODAPE*/
+footer{
+    width: 100%;
+    background-color: #4cd1a7;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+}
+footer .rodape{
+ width: 50%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ flex-direction: row;
+}
+footer .rodape div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer .rodape div p{
+    margin: 10px;
+}
+/*FIM RODAPE*/
+/*MediaQuery*/
+@media(max-width:1280px){
+    .quartos figure img{
+        width: 300px;
+        height: 200px;
+
+    }
+    
+    footer .rodape{width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        
+    }
+
+}
+@media(max-width:920px){
+    .quartos{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .baner div{
+        width: 720px;
+    }
+    .informacoesQuarto ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+    footer .rodape{
+        display: flex;
+        flex-direction: column;
+    }
+   
+   
+}
+@media(max-width:720px){
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100px;
+    }
+    header nav{
+        width: 40%;
+        margin-top: 20px;
+    }
+    .baner div{
+        width: 420px;
+    }
+    
+    .sobreDescricaoContainer .sobreDescricao p{
+        width: 200px;
+    }
+}
